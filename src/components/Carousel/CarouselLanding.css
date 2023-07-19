@@ -1,0 +1,81 @@
+.btnA {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-image: linear-gradient(
+    to right,
+    #ffffff,
+    #e4e4e4,
+    #cacaca,
+    #b1b1b1,
+    #989898
+  );
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btnA i {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.btn4 {
+  margin-right: 10px;
+}
+
+.btn3 {
+  margin-left: 10px;
+}
+/* Add your existing CSS code here */
+
+/* Additional styles for the slider container */
+
+/* Center the buttons horizontally */
+.buttons2 {
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 10vh;
+  transform: translateY(-50vh);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  z-index: 1;
+}
+.slick-slider {
+  position: none;
+}
+@media screen and (max-width: 770px) {
+  .btnA {
+    display: none;
+  }
+  .slider-container {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .buttons2 {
+    transform: translateY(-50vh);
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .buttons2 {
+    transform: translateY(-33vh);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .buttons2 {
+    transform: translateY(-35vh);
+  }
+}
+@media screen and (max-width: 900px) {
+  .buttons2 {
+    transform: translateY(-30vh);
+  }
+}

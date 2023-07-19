@@ -1,0 +1,138 @@
+.footer {
+  padding-block: 50px;
+  padding-bottom: 25px;
+  background-color: #151515;
+  color: #666873;
+  /* Margin-top: auto; for demo use only */
+  margin-top: auto;
+}
+.footer__container {
+  max-width: 1160px;
+  margin: auto;
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+.footer__top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  row-gap: 20px;
+}
+.footer__title {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.gridone {
+  display: flex;
+  flex-direction: column;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__list {
+  margin-left: 1.5rem;
+  list-style-image: url("trainbullets.gif");
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__list-link {
+  transition: color 0.25s;
+}
+.footer__list-link:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+.footer__divider {
+  margin-block: 25px;
+  border: none;
+  border-top: 1px solid rgba(252, 255, 255, 0.1);
+}
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.footer__list--bottom {
+  flex-direction: row;
+}
+.imgeffects {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 1rem;
+}
+
+select {
+  width: 100%;
+  border-color: #666666;
+  background-color: #151515;
+  color: white;
+  padding: 3% 7%;
+}
+@media screen and (max-width: 1180px) {
+  .footer__container {
+    max-width: 1160px;
+    margin: 0 4%;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .footer__container {
+    justify-content: center;
+    align-items: center;
+    max-width: 1160px;
+    margin: auto;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .footer__top {
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 20px;
+  }
+  .footer__list {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .imgeffects {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin: 0 5% 5% 5%;
+  }
+}
+.imgeffects {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0% 5% 0%;
+}
+.contactimg {
+  height: 2.5rem;
+  width: 2.5rem;
+}
